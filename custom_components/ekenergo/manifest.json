@@ -1,0 +1,10 @@
+{
+    "domain": "ekenergo",
+    "name": "Ekaterinburg Energo",
+    "config_flow": true,
+    "documentation": "https://github.com/archekb/ha-ekenergo",
+    "requirements": ["aiohttp","lxml"],
+    "codeowners": ["@archekb"],
+    "iot_class": "cloud_polling",
+    "version": "0.0.2"
+  }

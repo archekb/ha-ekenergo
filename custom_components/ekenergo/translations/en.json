@@ -1,0 +1,22 @@
+{
+    "title": "Ekaterinburg energo",
+    "config": {
+        "abort": {
+            "already_configured": "Already configured"
+        },
+        "error": {
+            "account_invalid": "Account invalid, only digits allow",
+            "account_not_found": "Account not found",
+            "unknown": "Unknown Error",
+            "already_added": "Account already added"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "account": "Ekaterinburg energo account",
+                    "phone": "Phone number will added to data which send to provider (optional)"
+                }
+            }
+        }
+   }
+}
