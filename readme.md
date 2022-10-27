@@ -25,27 +25,27 @@
 ```
 type: entities
 entities:
-  - entity: sensor.ekenergo_123_zadolzhenost
+  - entity: sensor.ekenergosbyt_{номер вашего счета}_zadolzhenost
     name: Задолженость
-  - entity: sensor.ekenergo_123_den
+  - entity: sensor.ekenergosbyt_{номер вашего счета}_den
     name: День
-  - entity: sensor.ekenergo_123_noch
+  - entity: sensor.ekenergosbyt_{номер вашего счета}_noch
     name: Ночь
-  - entity: sensor.ekenergo_123_predstavitel
+  - entity: sensor.ekenergosbyt_{номер вашего счета}_predstavitel
     name: Представитель
-  - entity: sensor.ekenergo_123_telefon
+  - entity: sensor.ekenergosbyt_{номер вашего счета}_telefon
     name: Телефон
-  - entity: sensor.ekenergo_123_data_obnovleniia
+  - entity: sensor.ekenergosbyt_{номер вашего счета}_data_obnovleniia
     name: Дата обновления
-  - entity: button.ekenergo_123_obnovit_dannye
+  - entity: button.ekenergosbyt_{номер вашего счета}_obnovit_dannye
     name: Обновить данные
-  - entity: number.ekenergo_123_den
+  - entity: number.ekenergosbyt_{номер вашего счета}_den
     name: День
-  - entity: number.ekenergo_123_noch
+  - entity: number.ekenergosbyt_{номер вашего счета}_noch
     name: Ночь
-  - entity: sensor.ekenergo_123_data_otpravki
+  - entity: sensor.ekenergosbyt_{номер вашего счета}_data_otpravki
     name: Дата отправки
-  - entity: button.ekenergo_123_otpravit_pokazaniia
+  - entity: button.ekenergosbyt_{номер вашего счета}_otpravit_pokazaniia
     name: Отправить показания
 title: Екатеринбургэнерго
 ```
