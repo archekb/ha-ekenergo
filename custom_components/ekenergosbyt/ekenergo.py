@@ -23,7 +23,7 @@ class Ekenergo:
     def deviceInfo(self) -> dict:
         return {
             "identifiers": {(DOMAIN, self._account)},
-            "manufacturer": "Екатеринбургэнерго",
+            "manufacturer": "Екатеринбургэнергосбыт",
             "model": "Энергоснабжение",
             "name": f"{DOMAIN}_{self._account}",
         }
@@ -130,51 +130,3 @@ def ichain(obj: object, *items: list, default:Any = None) -> Any:
 
 
     return reduce(get_item, items, obj)
-
-# get:
-# account: null
-# address: null
-# calculateUntil: null
-# debt: null
-# district: null
-# email: null
-# hiddenInputs: null
-# indicators: null
-# isExists: false
-# isUL: false
-# manager: null
-# phone: null
-
-# post:
-# show0: 4380
-# show1: 3760
-# show00: 27322801            
-# show01: День
-# show02: 4378
-# show03: 01.06.2022
-# show04: 4378
-# show05: 01.06.2022
-# show06: 
-# show07: 111508732
-# show08: 1
-# show09: 5317113005
-# show010: Меркурий 206 N (6,2) 2-зон
-# show011: 1
-# col: 12
-# row: 2
-# show10: 27322801            
-# show11: Ночь
-# show12: 3745
-# show13: 01.06.2022
-# show14: 3745
-# show15: 01.06.2022
-# show16: 
-# show17: 111508732
-# show18: 2
-# show19: 5317113005
-# show110: Меркурий 206 N (6,2) 2-зон
-# show111: 1
-# col: 12
-# row: 2
-# ip: 10.52.4.254
-# phone: 

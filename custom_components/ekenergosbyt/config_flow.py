@@ -61,10 +61,10 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         return self.async_show_form( step_id="user", data_schema=DATA_SCHEMA, errors=errors )
 
 class ErrorInvalidAccount(exceptions.HomeAssistantError):
-    """Error invalid Ekenergo Account."""
+    """Error invalid EkaterinburgEnergoSbyt Account."""
 
 class ErrorAccountNotFound(exceptions.HomeAssistantError):
-    """Error Ekenergo Account not found."""
+    """Error EkaterinburgEnergoSbyt Account not found."""
 
 class ErrorAlreadyAdded(exceptions.HomeAssistantError):
-    """Error Ekenergo Account already found."""
+    """Error EkaterinburgEnergoSbyt Account already found."""

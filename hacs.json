@@ -1,5 +1,5 @@
 {
-  "name": "Ekaterinburg Energo integration",
+  "name": "EkaterinburgEnergoSbyt integration",
   "domains": ["sensor", "service"],
   "iot_class": "Cloud Polling",
   "homeassistant": "2022.8.0"

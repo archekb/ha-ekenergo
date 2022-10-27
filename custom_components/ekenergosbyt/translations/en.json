@@ -1,5 +1,5 @@
 {
-    "title": "Ekaterinburg energo",
+    "title": "EkaterinburgEnergoSbyt",
     "config": {
         "abort": {
             "already_configured": "Already configured"
@@ -13,8 +13,8 @@
         "step": {
             "user": {
                 "data": {
-                    "account": "Ekaterinburg energo account",
-                    "phone": "Phone number will added to data which send to provider (optional)"
+                    "account": "EkaterinburgEnergoSbyt account",
+                    "phone": "(optional) Phone number will added to data which send to provider"
                 }
             }
         }

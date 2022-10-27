@@ -16,7 +16,7 @@ help: ## Show this help
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z0-9_-]+:.*?## / {printf "  \033[32m%-11s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
 dev: ## Run develop container
-	docker run --rm -v "/home/arch/ha_conf:/config:rw" -v "$$(pwd)/custom_components:/config/custom_components" -p 8080:8123 homeassistant/home-assistant
+	docker run --rm -v "$$(pwd)/ha_conf:/config:rw" -v "$$(pwd)/custom_components:/config/custom_components" -p 8080:8123 homeassistant/home-assistant
 
 pull: ## Get latest Home Assistant container
 	docker pull homeassistant/home-assistant
