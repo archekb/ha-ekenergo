@@ -1,6 +1,6 @@
 {
     "domain": "ekenergosbyt",
-    "name": "EkaterinburgEnergoSbyt",
+    "name": "Екатеринбургэнергосбыт",
     "config_flow": true,
     "documentation": "https://github.com/archekb/ha-ekenergosbyt",
     "requirements": ["aiohttp","lxml"],

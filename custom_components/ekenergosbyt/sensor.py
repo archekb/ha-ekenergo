@@ -21,7 +21,8 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_e
         District(coordinator, ee),
         Debt(coordinator, ee),
         Manager(coordinator, ee),
-        ManagerPhone(coordinator, ee)
+        ManagerPhone(coordinator, ee),
+        Account(coordinator, ee)
     ]
 
     for iname in ee.get("indicator_data").keys():
@@ -134,6 +135,19 @@ class ManagerPhone(Default):
     @property
     def state(self):
         return self._ee.get("phone")
+
+class Account(Default):
+    _attr_icon = "mdi:account"
+
+    def __init__(self, coordinator, ee):
+        CoordinatorEntity.__init__(self=self, coordinator=coordinator)
+        self._ee = ee
+        self._attr_unique_id = f"{DOMAIN}_{self._ee.get('account')}_account"
+        self._attr_name = f"{DOMAIN}_{self._ee.get('account')} Номер счета"
+
+    @property
+    def state(self):
+        return self._ee.get("account")
 
 class Indicator(Default):
     _attr_icon = "mdi:counter"
